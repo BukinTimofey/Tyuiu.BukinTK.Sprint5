@@ -8,7 +8,7 @@ namespace Tyuiu.BukinTK.Sprint5.Task0.V17.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            double result = Math.Round(2.4 * Math.Pow(x, 2) + 0.4 * Math.Pow(x, 2) - 14 * x + 41, 3);
+            double result = Math.Round(2.4 * Math.Pow(x, 3) + 0.4 * Math.Pow(x, 2) - 1.4 * x + 4.1, 3);
             string tempFilePath = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
             File.WriteAllText(tempFilePath, result.ToString());
             return tempFilePath;
