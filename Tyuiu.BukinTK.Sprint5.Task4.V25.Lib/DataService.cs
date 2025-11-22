@@ -7,8 +7,10 @@ namespace Tyuiu.BukinTK.Sprint5.Task4.V25.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            double strx = Convert.ToDouble(File.ReadAllText(path));
-            return Math.Round((Math.Pow(strx, 4) + Math.Cos(strx)) * Math.Sin(strx), 3);
+            string strx = File.ReadAllText(path);
+            strx = strx.Replace('.', ',');
+            double x = (Convert.ToDouble(strx));
+            return Math.Round((Math.Pow(x, 4) + Math.Cos(x)) * Math.Sin(x), 3);
         }
     }
 }
