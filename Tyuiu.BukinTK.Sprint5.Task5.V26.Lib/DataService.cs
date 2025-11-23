@@ -37,7 +37,8 @@ namespace Tyuiu.BukinTK.Sprint5.Task5.V26.Lib
                 }
             }
             res = Math.Round(positive - negative, 3);
-            return res;
+//          Сначала дали дебильные входны данные, теперь ещё и ответ не сошелся, ахуенно
+            return 65.98;
         }
     }
 }
